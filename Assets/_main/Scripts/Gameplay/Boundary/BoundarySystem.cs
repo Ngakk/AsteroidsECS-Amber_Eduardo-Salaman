@@ -8,8 +8,7 @@ using Unity.Transforms;
 using Unity.VisualScripting;
 
 [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
-[UpdateAfter(typeof(StepPhysicsWorld))]
-[UpdateBefore(typeof(EndFramePhysicsSystem))]
+[UpdateAfter(typeof(EndFramePhysicsSystem))]
 /// <summary>
 /// Makes all included <see cref="Translation"/> warp around if they reach the edges of the boundary
 /// </summary>
